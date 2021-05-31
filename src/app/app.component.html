@@ -1,0 +1,11 @@
+<mat-drawer-container>
+    <mat-drawer #drawer mode="side">
+        <a [routerLink]="['/']">Inicio</a><br>
+        <a [routerLink]="['/nomina']">Nómina</a><br>
+        <a (click)="logout()" *ngIf="usuario" style="cursor: pointer; text-decoration: underline;">Cerrar Sesión</a>
+    </mat-drawer>
+    <div>
+        <button (click)="drawer.toggle()">Mostrar/Ocultar</button>
+        <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>

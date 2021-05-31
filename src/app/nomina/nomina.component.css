@@ -1,0 +1,13 @@
+table { 
+    width: 90%;
+}
+
+.mat-header-cell {
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mat-cell {
+    text-align: center;
+}
